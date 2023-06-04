@@ -1,0 +1,117 @@
+{
+  "groups": [
+    {
+      "name": "gold-cave.ws.application",
+      "type": "kr.gsc.gold_cave.ws.configuration.support.ApplicationProperties",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.ApplicationProperties"
+    },
+    {
+      "name": "gold-cave.ws.mybatis",
+      "type": "kr.gsc.gold_cave.ws.configuration.support.DatabaseProperties",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.DatabaseProperties"
+    },
+    {
+      "name": "gold-cave.ws.tomcat",
+      "type": "kr.gsc.gold_cave.ws.configuration.support.TomcatProperties",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.TomcatProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "gold-cave.ws.application.network-conn-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.ApplicationProperties"
+    },
+    {
+      "name": "gold-cave.ws.application.network-read-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.ApplicationProperties"
+    },
+    {
+      "name": "gold-cave.ws.mybatis.config-location",
+      "type": "java.lang.String",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.DatabaseProperties"
+    },
+    {
+      "name": "gold-cave.ws.mybatis.driver-class-name",
+      "type": "java.lang.String",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.DatabaseProperties"
+    },
+    {
+      "name": "gold-cave.ws.mybatis.max-life-time",
+      "type": "java.lang.Long",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.DatabaseProperties"
+    },
+    {
+      "name": "gold-cave.ws.mybatis.max-pool-size",
+      "type": "java.lang.Integer",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.DatabaseProperties"
+    },
+    {
+      "name": "gold-cave.ws.mybatis.min-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.DatabaseProperties"
+    },
+    {
+      "name": "gold-cave.ws.mybatis.password",
+      "type": "java.lang.String",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.DatabaseProperties"
+    },
+    {
+      "name": "gold-cave.ws.mybatis.url",
+      "type": "java.lang.String",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.DatabaseProperties"
+    },
+    {
+      "name": "gold-cave.ws.mybatis.username",
+      "type": "java.lang.String",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.DatabaseProperties"
+    },
+    {
+      "name": "gold-cave.ws.tomcat.allow-origins",
+      "type": "java.lang.Boolean",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.TomcatProperties"
+    },
+    {
+      "name": "gold-cave.ws.tomcat.connection-lingers",
+      "type": "java.lang.String",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.TomcatProperties"
+    },
+    {
+      "name": "gold-cave.ws.tomcat.connection-timeout",
+      "type": "java.lang.String",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.TomcatProperties"
+    },
+    {
+      "name": "gold-cave.ws.tomcat.keep-alive-timeout",
+      "type": "java.lang.String",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.TomcatProperties"
+    },
+    {
+      "name": "gold-cave.ws.tomcat.max-connections",
+      "type": "java.lang.String",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.TomcatProperties"
+    },
+    {
+      "name": "gold-cave.ws.tomcat.max-keep-alive-requests",
+      "type": "java.lang.String",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.TomcatProperties"
+    },
+    {
+      "name": "gold-cave.ws.tomcat.max-threads",
+      "type": "java.lang.String",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.TomcatProperties"
+    },
+    {
+      "name": "gold-cave.ws.tomcat.min-spare-threads",
+      "type": "java.lang.String",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.TomcatProperties"
+    },
+    {
+      "name": "gold-cave.ws.tomcat.server-info",
+      "type": "java.lang.String",
+      "sourceType": "kr.gsc.gold_cave.ws.configuration.support.TomcatProperties"
+    }
+  ],
+  "hints": []
+}

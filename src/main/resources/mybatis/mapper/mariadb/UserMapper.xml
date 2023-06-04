@@ -1,0 +1,70 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.gsc.gold_cave.ws.repository.mapper.UserMapper">
+    <resultMap id="UserResultMap" type="User">
+        <id     property="id"                   column="id" />
+        <result property="email"                column="email" />
+        <result property="password"             column="password" />
+        <result property="nickname"             column="nickname" />
+        <result property="type"                 column="type" />
+        <result property="createdDatetime"      column="created_datetime" />
+        <result property="updatedDatetime"      column="updated_datetime" />
+    </resultMap>
+
+    <select id="selectUser" parameterType="String" resultMap="UserResultMap">
+        SELECT
+            id,
+            email,
+            password,
+            nickname,
+            type,
+            created_datetime,
+            updated_datetime
+        FROM users
+        WHERE id = #{value}
+    </select>
+
+    <select id="selectUserByEmail" parameterType="String" resultMap="UserResultMap">
+        SELECT
+            id,
+            email,
+            password,
+            nickname,
+            type,
+            created_datetime,
+            updated_datetime
+        FROM users
+        WHERE email = #{email}
+    </select>
+
+    <select id="selectUsersWhereType" parameterType="UserType" resultMap="UserResultMap">
+        SELECT
+            id,
+            email,
+            password,
+            nickname,
+            type,
+            created_datetime,
+            updated_datetime
+        FROM users
+        WHERE type = #{value}
+        ORDER BY created_datetime DESC
+    </select>
+
+    <insert id="insertUser" parameterType="User">
+        INSERT INTO users (
+            email,
+            password,
+            nickname,
+            type,
+            created_datetime,
+            updated_datetime
+        ) VALUES (
+            #{email},
+            #{password},
+            #{nickname},
+            #{type},
+            NOW(),
+            NOW()
+        )
+    </insert>
+</mapper>
